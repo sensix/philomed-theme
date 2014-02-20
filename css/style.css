@@ -532,7 +532,7 @@ ul.jcarousel-navigation {text-align: right}
 
 
 
-/*BUBBLE TAXONOMY*/
+/*BUBBLE TAXONOMY - PAGINA MAPPE TEMATICHE*/
 .bubbletree-wrapper{
 
 }
@@ -546,6 +546,43 @@ ul.jcarousel-navigation {text-align: right}
 
 .bubbletree .label {#ffffff;}
 .label, .badge {background-color: transparent;}
+
+
+
+/* gli stili della pagina mappe tematiche si trovano proncipalemente sul file graph.css,
+e qui vengono SOVRASCRITTI! */
+
+.page-d3t .breadcrumb {display:none;}
+
+.page-d3t .selector ul {margin:0;}
+.page-d3t .selector ul#discipline {margin-bottom:40px;}
+
+
+ul#aree-tematiche,ul#discipline{border-bottom:1px solid #cccccc!important;}
+#aree-tematiche li, #discipline li {margin:0 8px 8px 0!important;padding:0!important;border:0!important;display:inline-block;}
+#aree-tematiche li a, #discipline li a {margin:0!important;padding:2px 6px!important;border:1px solid #999999!important;background-color:#f5f5f5!important;color:#666666!important;text-transform:uppercase!important;font-size:0.8em!important;-moz-box-shadow: 0 0 3px #999999;-webkit-box-shadow:0 0 3px #999999;box-shadow: 0 0 3px #999999;}
+#aree-tematiche li a:hover, #discipline li a:hover,#aree-tematiche li a.active, #discipline li a.active {background-color:#960202!important;color:#ffffff!important;}
+#aree-tematiche li a.active, #discipline li a.active {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;border:1px solid #960202!important;}
+
+ul.graph-content,
+ul.graph-content li {list-style:none!important;margin:0!important;}
+ul.graph-content li {margin:0 0 15px 0!important;padding:0 0 10px 0!important; border-bottom:1px solid #cccccc!important;}
+ul.graph-content li  a{font-weight:bold}
+
+.page-d3t .selector span {display:inline-block;font-size:0.8em;}
+
+.type-M, .type-D {color:#960202; font-size:1.3em; text-transform:uppercase;}
+.type-M {font-weight:bold;margin-bottom:0px}
+.type-D {font-size:1.1em;margin-bottom:15px}
+
+
+/*GRAFICO SVG*/
+.graph svg{background-color:#f5f5f5!important;border:0;width:100%!important;max-width:100%!important;margin:0}
+.graph svg text {text-transform:uppercase!important;font-size:1em!important}
+.graph svg circle.active {stroke:#960202;stroke-width:5px!important;}
+.graph svg circle:hover{fill:#b40303!important;cursor:pointer;}
+.graph svg .node text:nth-child(2) {stroke:#999999;stroke-width:0px;fill:#000000!important}
+.graph svg .node text:nth-child(3) {stroke:#FFFFFF;stroke-width:0.5px;fill:#FFFFFF!important}
 
 
 
